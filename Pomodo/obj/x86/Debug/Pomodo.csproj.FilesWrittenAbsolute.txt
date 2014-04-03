@@ -1,0 +1,6 @@
+/Users/fred/Projects/Pomodoro/Pomodo/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/fred/Projects/Pomodoro/Pomodo/obj/x86/Debug/Pomodo.gtk-gui.gui.stetic
+/Users/fred/Projects/Pomodoro/Pomodo/bin/Debug/Pomodo.exe.mdb
+/Users/fred/Projects/Pomodoro/Pomodo/bin/Debug/Pomodo.exe
+/Users/fred/Projects/Pomodoro/Pomodo/obj/x86/Debug/Pomodo.exe
+/Users/fred/Projects/Pomodoro/Pomodo/obj/x86/Debug/Pomodo.exe.mdb

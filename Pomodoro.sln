@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pomodo", "Pomodo\Pomodo.csproj", "{8DAD6A21-39B3-4534-85CF-1FD6D9D12BCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PomodoroEng", "PomodoroEng\PomodoroEng.csproj", "{527CB846-1F99-4800-825F-AD53D6F3E01A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{527CB846-1F99-4800-825F-AD53D6F3E01A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{527CB846-1F99-4800-825F-AD53D6F3E01A}.Debug|x86.Build.0 = Debug|Any CPU
+		{527CB846-1F99-4800-825F-AD53D6F3E01A}.Release|x86.ActiveCfg = Release|Any CPU
+		{527CB846-1F99-4800-825F-AD53D6F3E01A}.Release|x86.Build.0 = Release|Any CPU
+		{8DAD6A21-39B3-4534-85CF-1FD6D9D12BCE}.Debug|x86.ActiveCfg = Debug|x86
+		{8DAD6A21-39B3-4534-85CF-1FD6D9D12BCE}.Debug|x86.Build.0 = Debug|x86
+		{8DAD6A21-39B3-4534-85CF-1FD6D9D12BCE}.Release|x86.ActiveCfg = Release|x86
+		{8DAD6A21-39B3-4534-85CF-1FD6D9D12BCE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Pomodo\Pomodo.csproj
+	EndGlobalSection
+EndGlobal
