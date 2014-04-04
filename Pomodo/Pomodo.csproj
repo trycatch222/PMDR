@@ -66,9 +66,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\PomodoroEng\PomodoroEng.csproj">
-      <Project>{527CB846-1F99-4800-825F-AD53D6F3E01A}</Project>
-      <Name>PomodoroEng</Name>
+    <ProjectReference Include="..\PMDREng\PMDREng.csproj">
+      <Project>{7264BF6E-5681-453B-8DCC-BC8A2AAED0F6}</Project>
+      <Name>PMDREng</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

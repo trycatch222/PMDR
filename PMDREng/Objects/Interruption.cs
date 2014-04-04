@@ -1,6 +1,7 @@
 ﻿using System;
+using SQLite;
 
-namespace PomodoroEng
+namespace PMDREng
 {
 	/// <summary>
 	/// Diescribe an interruption in a pomodoro
@@ -9,6 +10,25 @@ namespace PomodoroEng
 	{
 		public Interruption ()
 		{
+		}
+
+		/// <summary>
+		/// Gets or sets the identifier.
+		/// </summary>
+		/// <value>The identifier.</value>
+		[PrimaryKey, AutoIncrement]
+		public int Id {
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// Gets or sets the pomodoro identifier.
+		/// </summary>
+		/// <value>The pomodoro identifier.</value>
+		public int PomodoroId {
+			get;
+			set;
 		}
 
 		/// <summary>

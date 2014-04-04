@@ -1,6 +1,7 @@
 ﻿using System;
+using SQLite;
 
-namespace PomodoroEng
+namespace PMDREng
 {
 	/// <summary>
 	/// Describe a task to do unsing the pomodoro teechnique
@@ -9,6 +10,16 @@ namespace PomodoroEng
 	{
 		public PomodoroTask ()
 		{
+		}
+
+		/// <summary>
+		/// Gets or sets the identifier.
+		/// </summary>
+		/// <value>The identifier.</value>
+		[PrimaryKey, AutoIncrement]
+		public int Id {
+			get;
+			set;
 		}
 
 		/// <summary>

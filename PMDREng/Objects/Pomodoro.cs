@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using SQLite;
 
-namespace PomodoroEng
+namespace PMDREng
 {
 	/// <summary>
 	/// Describe a pomodoro cycle of a task
@@ -10,6 +11,25 @@ namespace PomodoroEng
 	{
 		public Pomodoro ()
 		{
+		}
+
+		/// <summary>
+		/// Gets or sets the identifier.
+		/// </summary>
+		/// <value>The identifier.</value>
+		[PrimaryKey, AutoIncrement]
+		public int id {
+			get;
+			set;
+		}
+
+		/// <summary>
+		/// Gets or sets the task identifier.
+		/// </summary>
+		/// <value>The task identifier.</value>
+		public int TaskId {
+			get;
+			set;
 		}
 
 		/// <summary>
@@ -37,15 +57,6 @@ namespace PomodoroEng
 		/// </summary>
 		/// <value>The duration.</value>
 		public int Duration {
-			get;
-			set;
-		}
-
-		/// <summary>
-		/// Gets or sets all the interruptions happening during a pomodoro.
-		/// </summary>
-		/// <value>The interruptions.</value>
-		public List<Interruption> Interruptions {
 			get;
 			set;
 		}

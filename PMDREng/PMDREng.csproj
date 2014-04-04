@@ -5,13 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{527CB846-1F99-4800-825F-AD53D6F3E01A}</ProjectGuid>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{7264BF6E-5681-453B-8DCC-BC8A2AAED0F6}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>PomodoroEng</RootNamespace>
-    <AssemblyName>PomodoroEng</AssemblyName>
-    <TargetFrameworkProfile>Profile136</TargetFrameworkProfile>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>PMDREng</RootNamespace>
+    <AssemblyName>PMDREng</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,10 +29,19 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PomodoroTask.cs" />
-    <Compile Include="Pomodoro.cs" />
-    <Compile Include="Interruption.cs" />
+    <Reference Include="System" />
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Objects\Interruption.cs" />
+    <Compile Include="Objects\Pomodoro.cs" />
+    <Compile Include="Objects\PomodoroTask.cs" />
+    <Compile Include="SQLite.cs" />
+    <Compile Include="Store\DbManagement.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Objects\" />
+    <Folder Include="Store\" />
+  </ItemGroup>
 </Project>
